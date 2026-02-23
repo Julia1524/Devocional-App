@@ -10,8 +10,10 @@ const FONTS_WEIGHTS = {
 const FONT_SIZES = {
   small: 12,
   medium: 16,
+  titleCard: 20,
   large: 30,
   xlarge: 40,
+  title: 60
 };
 
 export default function CustomText({

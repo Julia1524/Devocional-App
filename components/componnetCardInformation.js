@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         elevation: 3,
     },
     iconContainer: {
-        marginTop: -50,
+        marginTop: -53,
         marginLeft: -40,
         flexWrap: 'wrap',
         flexShrink: 1,
@@ -72,6 +72,8 @@ const styles = StyleSheet.create({
   },
   description: {
     marginVertical: 30,
+    alignSelf: 'flex-start',
+    marginLeft: -20,
   },
   subDescription: {
     marginBottom: 12,

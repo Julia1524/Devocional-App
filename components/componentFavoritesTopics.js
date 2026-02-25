@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     width: '88%',
     marginBottom: 20,
     padding: 3,
-    marginHorizontal: 16,
+    marginHorizontal: 10,
     borderRadius: 26,
     backgroundColor: Colors.yellow,
     shadowColor: '#000',
@@ -50,16 +50,16 @@ const styles = StyleSheet.create({
   },
 
   subContainer: {
-    paddingVertical: 20,
-    paddingHorizontal: 12,
+    paddingVertical: 17,
+    paddingHorizontal: 10,
     borderRadius: 22,
     overflow: "hidden",
   },
 
   iconContainer: {
     position: 'absolute',
-    top: -35,     // sobe o pássaro pra fora da moldura
-    left: -22,    // empurra pro canto esquerdo
+    top: -35,     
+    left: -22,    
   },
   textContainer: {
     flex: 1,

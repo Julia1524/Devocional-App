@@ -2,11 +2,12 @@ import React from "react";
 import { Image, StyleSheet, View } from "react-native";
 import CustomText from "./Text";
 
-export function ComponentPageHeader({ 
+export default function ComponentHeaderScreens({ 
     title,
     iconRight,
     iconLeft, 
     textColor = "#FFFFFF",
+    borderColor = "#FFFFFF",
  }) {
     return (
         <View style={styles.container}>
@@ -14,8 +15,8 @@ export function ComponentPageHeader({
                 {iconLeft &&
                     (typeof iconLeft === "function"
                         ? React.createElement(iconLeft, {
-                            width: 85,
-                            height: 85,
+                            width: 30,
+                            height: 30,
                             fill: "#fff",
                             style: styles.icon,
                         })
@@ -23,7 +24,34 @@ export function ComponentPageHeader({
                     }
             </View>
 
-           <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1, marginHorizontal: 10 }}>
+           <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+            <CustomText
+                weight="medieval_sharp"
+                type="large"
+                style={{
+                position: 'absolute',
+                color: borderColor,
+                textShadowColor: borderColor,
+                textShadowOffset: { width: -1, height: -1 },
+                textShadowRadius: 2,
+                }}
+            >
+                {title}
+            </CustomText>
+
+            <CustomText
+                weight="medieval_sharp"
+                type="large"
+                style={{
+                position: 'absolute',
+                color: borderColor,
+                textShadowColor: borderColor,
+                textShadowOffset: { width: 1, height: 1 },
+                textShadowRadius: 2,
+                }}
+            >
+                {title}
+            </CustomText>
 
             <CustomText
                 weight="medieval_sharp"

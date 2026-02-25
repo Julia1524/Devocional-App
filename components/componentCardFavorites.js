@@ -3,6 +3,7 @@ import { Image, ImageBackground, StyleSheet, View } from "react-native";
 import Img from "../assets/images/ImagemBackground.png";
 import { Colors } from "../constants/colors";
 import CustomText from "./Text";
+
 export  default function ComponentCardFavorites({ 
     iconRight,
     iconLeft,
@@ -29,7 +30,7 @@ export  default function ComponentCardFavorites({
             )}
     </View>
 
-            <View>
+            <View style={styles.center}>
                 <CustomText
                     weight="medieval_sharp"
                     type="large"
@@ -58,7 +59,7 @@ export  default function ComponentCardFavorites({
 }
 const styles = StyleSheet.create({
   container: {
-    width: '98%',
+    width: '95%',
     marginBottom: 20,
     padding: 3,                 // espessura da borda dourada
     marginHorizontal: 6,
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.yellow, // cor da moldura
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.1,
     shadowRadius: 6,
     elevation: 4,
   },
@@ -77,13 +78,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 20,
     paddingHorizontal: 12,
-    borderRadius: 22,          // um pouco menor que o container
+    borderRadius: 24,          // um pouco menor que o container
     overflow: "hidden",
   },
 
   backgroundImage: {
     resizeMode: "cover",
   },
+  center: {
+  position: "absolute",
+  left: 0,
+  right: 0,
+  alignItems: "center",
+},
 
    side: {
     width: 90,
@@ -95,7 +102,8 @@ const styles = StyleSheet.create({
         width: 30,
         alignItems: "flex-end", 
         marginLeft: 15,
-        marginRight: 10,
+        marginRight: 5,
+        marginTop: -50
     },
 
     iconBig: {

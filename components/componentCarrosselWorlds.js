@@ -13,8 +13,8 @@ export default function ComponentCarrosselWorlds({
                 {icon && (
                     typeof icon === "function"
                     ? React.createElement(icon, {
-                        width: 200,
-                        height: 200,
+                        width: 230,
+                        height: 230,
                         fill: "#fff",
                         })
                     : <Image source={icon} style={styles.icon} resizeMode="contain" />
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         width: '88%',
         marginBottom: 20,
         padding: 3,                 
-        marginHorizontal: 6,
+        marginHorizontal: 4,
         backfaceVisibility: 'hidden',
     }
 });
